@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About · Brevora Living Lines</title>
+    <meta name="description" content="About Brevora Living Lines — an independent editorial publication exploring interior design, architecture, materials, and the art of living well.">
+    <meta name="author" content="Brevora Editorial">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://brevoralivinglines.com/about.html">
+    <!-- Open Graph -->
+    <meta property="og:title" content="About · Brevora Living Lines">
+    <meta property="og:description" content="Independent stories on interior design, architecture, materials, and the poetics of space.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://brevoralivinglines.com/about.html">
+    <meta property="og:image" content="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1200">
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            "name": "About Brevora Living Lines",
+            "description": "Independent editorial on interior design, architecture, and thoughtful living.",
+            "url": "https://brevoralivinglines.com/about.html",
+            "author": {
+                "@type": "Person",
+                "name": "Elena Marchetti"
+            }
+        }
+    </script>
+    <style>
+        /* ----- RESET & GLOBAL (identical to index) ----- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root {
+            --paper: #fbf9f6;
+            --ink: #1e1c1a;
+            --ink-soft: #3d3a37;
+            --muted: #6b6560;
+            --accent: #b75e3a;
+            --accent-soft: #d9c7bc;
+            --border-light: #e3ddd6;
+            --card-bg: #ffffff;
+            --sidebar-bg: #f4f0eb;
+            --serif: 'Georgia', 'Times New Roman', 'Times', serif;
+            --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+        body {
+            background: var(--paper);
+            color: var(--ink);
+            font-family: var(--sans);
+            font-size: 1rem;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        a:hover {
+            color: var(--accent);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 4px;
+        }
+        .container {
+            max-width: 1320px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ----- TYPOGRAPHY (editorial) ----- */
+        h1, h2, h3, h4 {
+            font-family: var(--serif);
+            font-weight: 500;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.75rem;
+        }
+        h2 {
+            font-size: 2rem;
+            margin: 2rem 0 1rem;
+            letter-spacing: -0.01em;
+        }
+        h3 {
+            font-size: 1.4rem;
+            margin: 1.8rem 0 0.6rem;
+            font-weight: 500;
+        }
+        p {
+            margin-bottom: 1.4rem;
+            color: var(--ink-soft);
+            font-size: 1.05rem;
+        }
+        .small-caps {
+            font-family: var(--sans);
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: var(--muted);
+        }
+
+        /* ----- HEADER / LOGO (identical) ----- */
+        .site-header {
+            border-bottom: 1px solid var(--border-light);
+            background: var(--paper);
+            padding: 1.8rem 0 1.2rem;
+        }
+        .header-inner {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            justify-content: space-between;
+        }
+        .logo {
+            font-family: var(--serif);
+            font-size: 2.1rem;
+            font-weight: 600;
+            letter-spacing: -0.04em;
+            color: var(--ink);
+            line-height: 1;
+        }
+        .logo span {
+            color: var(--accent);
+            font-style: italic;
+            font-weight: 400;
+        }
+        .tagline {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: var(--muted);
+            margin-top: 0.3rem;
+        }
+        .main-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.8rem;
+            margin-top: 0.6rem;
+        }
+        .main-nav a {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--ink-soft);
+            padding-bottom: 0.2rem;
+            border-bottom: 1px solid transparent;
+        }
+        .main-nav a:hover,
+        .main-nav a.active {
+            border-bottom-color: var(--accent);
+            color: var(--ink);
+        }
+
+        /* ----- ABOUT PAGE LAYOUT ----- */
+        .about-hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            margin: 2rem 0 3rem;
+        }
+        @media (max-width: 800px) {
+            .about-hero {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+        .about-hero-content h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1.2rem;
+        }
+        .about-hero-content .lead {
+            font-size: 1.2rem;
+            color: var(--ink-soft);
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        .about-hero-image img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 6px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+        }
+        .about-mission {
+            background: var(--sidebar-bg);
+            padding: 2.5rem 2.8rem;
+            border-radius: 8px;
+            margin: 3rem 0;
+        }
+        .about-mission p {
+            font-size: 1.15rem;
+            font-family: var(--serif);
+            font-style: italic;
+            color: var(--ink);
+            margin-bottom: 0;
+        }
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 2rem;
+            margin: 2.5rem 0;
+        }
+        .about-card {
+            background: var(--card-bg);
+            padding: 1.8rem;
+            border-radius: 6px;
+            border: 1px solid var(--border-light);
+        }
+        .about-card h3 {
+            margin-top: 0;
+            font-size: 1.25rem;
+            margin-bottom: 0.8rem;
+        }
+        .about-card p {
+            font-size: 0.95rem;
+            color: var(--muted);
+            margin-bottom: 0;
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0 3rem;
+        }
+        .team-member {
+            text-align: center;
+        }
+        .team-member img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1rem;
+            border: 3px solid var(--paper);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        }
+        .team-member h4 {
+            font-family: var(--serif);
+            font-size: 1.2rem;
+            margin-bottom: 0.2rem;
+        }
+        .team-member .role {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--accent);
+            font-weight: 600;
+        }
+        .team-member .bio {
+            font-size: 0.9rem;
+            color: var(--muted);
+            margin-top: 0.5rem;
+        }
+        .values-list {
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+        .values-list li {
+            padding: 0.8rem 0 0.8rem 2rem;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%23b75e3a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>') left center no-repeat;
+            background-size: 1.1rem;
+            border-bottom: 1px solid var(--border-light);
+            color: var(--ink-soft);
+        }
+        .values-list li:last-child {
+            border-bottom: none;
+        }
+
+        /* ----- NEWSLETTER (same as index) ----- */
+        .newsletter-section {
+            background: var(--sidebar-bg);
+            padding: 3rem 0;
+            margin: 3rem 0 3rem;
+            border-radius: 8px;
+        }
+        .newsletter-inner {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 0 1.5rem;
+        }
+        .newsletter-inner h2 {
+            margin-top: 0;
+        }
+        .newsletter-inner p {
+            color: var(--muted);
+            margin-bottom: 1.5rem;
+        }
+        .newsletter-form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            justify-content: center;
+        }
+        .newsletter-form input {
+            flex: 1 1 260px;
+            padding: 0.8rem 1.2rem;
+            border: 1px solid var(--border-light);
+            border-radius: 40px;
+            font-family: var(--sans);
+            font-size: 0.95rem;
+            background: white;
+        }
+        .newsletter-form button {
+            background: var(--ink);
+            color: white;
+            border: none;
+            padding: 0.8rem 2rem;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .newsletter-form button:hover {
+            background: var(--accent);
+        }
+
+        /* ----- FOOTER (identical) ----- */
+        .site-footer {
+            background: #1e1c1a;
+            color: #d9d2ca;
+            padding: 3rem 0 2rem;
+            margin-top: 2rem;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 2.5rem;
+        }
+        .footer-grid h4 {
+            color: white;
+            font-family: var(--sans);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1.2rem;
+        }
+        .footer-grid ul {
+            list-style: none;
+        }
+        .footer-grid li {
+            margin-bottom: 0.7rem;
+            font-size: 0.9rem;
+        }
+        .footer-grid a {
+            color: #b9b1a8;
+        }
+        .footer-grid a:hover {
+            color: white;
+        }
+        .footer-bottom {
+            border-top: 1px solid #3a3633;
+            padding-top: 1.8rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            color: #8f8780;
+        }
+
+        /* ----- UTILS ----- */
+        .divider {
+            border: 0;
+            border-top: 1px solid var(--border-light);
+            margin: 2.5rem 0;
+        }
+        .text-accent {
+            color: var(--accent);
+        }
+    </style>
+</head>
+<body>
+    <!-- ========== HEADER ========== -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <div>
+                <div class="logo">Brevora <span>Living Lines</span></div>
+                <div class="tagline">Interior · Architecture · Material Culture</div>
+            </div>
+            <nav class="main-nav" aria-label="Main">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="terms.html">Terms Of Privacy</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="cookies.html">Cookies Policy</a></li>
+                <li><a href="disclaimer.html">Disclaimer</a></li>
+                <li><a href="categories.html">Categories</a></li>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" id="main-content">
+        <!-- ========== ABOUT HERO ========== -->
+        <section class="about-hero">
+            <div class="about-hero-content">
+                <div class="small-caps" style="margin-bottom:0.8rem;">About the journal</div>
+                <h1>Brevora Living Lines</h1>
+                <p class="lead">An independent editorial publication exploring the quiet intelligence of spaces — where architecture, interior design, and material culture meet.</p>
+                <p>Founded in 2023, Brevora Living Lines was born from a simple frustration: too much design writing felt either superficial or overly academic. We wanted a place where rigour meets warmth, where a material’s carbon footprint and its tactile beauty are discussed in the same breath. A journal that treats a well-proportioned room with the same seriousness as a public building, and that understands the poetry in a shadow cast across a concrete wall.</p>
+                <p>We publish long-form essays, interviews, and visual stories. We are not trend-driven. We are drawn to what lasts — in materials, in ideas, in the way light moves through a home over a day.</p>
+            </div>
+            <div class="about-hero-image">
+                <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Sunlit minimalist interior with concrete wall and oak floor">
+            </div>
+        </section>
+
+        <!-- ========== MISSION STATEMENT ========== -->
+        <div class="about-mission">
+            <p>“We believe that good design is not about decoration, but about the honest use of materials, the thoughtful shaping of light, and the quiet dignity of spaces that serve the people who inhabit them.”</p>
+        </div>
+
+        <!-- ========== WHAT WE COVER / CARDS ========== -->
+        <section>
+            <h2 style="margin-top:0;">What we cover</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>Interior Design</h3>
+                    <p>From the psychology of colour to the ergonomics of a kitchen, we examine how interiors shape daily life — and how to make them both beautiful and functional.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Architecture</h3>
+                    <p>Residential, civic, and adaptive reuse. We look at buildings as frameworks for living, with a focus on climate responsiveness and human scale.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Materials</h3>
+                    <p>Timber, stone, concrete, hemp, terrazzo, clay. We trace where materials come from, how they age, and what they mean for a sustainable future.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Light &amp; Space</h3>
+                    <p>Daylight, circadian lighting, the poetics of shadow. We explore light as a building material in its own right — one that changes everything.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== EDITORIAL VALUES ========== -->
+        <section style="margin: 3rem 0;">
+            <h2>Editorial values</h2>
+            <ul class="values-list">
+                <li><strong>Independence:</strong> We are not affiliated with any brand, manufacturer, or PR agency. Our recommendations are our own.</li>
+                <li><strong>Depth over speed:</strong> We take time to research, interview, and refine. Not every story is breaking news — most are built to last.</li>
+                <li><strong>Material honesty:</strong> We care about where things come from, how they are made, and what happens when they are no longer needed.</li>
+                <li><strong>Human experience:</strong> Design is for people. We write about how spaces feel, not just how they look.</li>
+                <li><strong>Accessibility:</strong> Good design writing should be readable by anyone with curiosity. We avoid jargon for its own sake.</li>
+            </ul>
+        </section>
+
+        <!-- ========== TEAM ========== -->
+        <section>
+            <h2>Who we are</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="https://images.pexels.com/photos/3765114/pexels-photo-3765114.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Portrait of Elena Marchetti, Editor-in-Chief">
+                    <h4>Elena Marchetti</h4>
+                    <div class="role">Editor-in-Chief</div>
+                    <p class="bio">Architect and writer. Elena has practised in Milan and Copenhagen, and now writes full-time on material culture and the poetics of space.</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Portrait of Marcus Oyelaran, Senior Editor">
+                    <h4>Marcus Oyelaran</h4>
+                    <div class="role">Senior Editor</div>
+                    <p class="bio">Trained as a structural engineer, Marcus brings technical rigour to our architecture coverage. He is passionate about passive design and low-carbon building.</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Portrait of Clara Nakamura, Contributing Editor">
+                    <h4>Clara Nakamura</h4>
+                    <div class="role">Contributing Editor</div>
+                    <p class="bio">Based in Kyoto, Clara writes on wabi-sabi aesthetics, Japanese joinery, and the intersection of craft and contemporary interiors.</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://images.pexels.com/photos/3760854/pexels-photo-3760854.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Portrait of Sofia Lindqvist, Materials Editor">
+                    <h4>Sofia Lindqvist</h4>
+                    <div class="role">Materials Editor</div>
+                    <p class="bio">Sofia is a material scientist by training. She investigates sustainable composites, recycled aggregates, and the lifecycle of building products.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CONTRIBUTE / PITCH ========== -->
+        <section style="background: var(--card-bg); border: 1px solid var(--border-light); border-radius: 8px; padding: 2.5rem; margin: 3rem 0;">
+            <div style="max-width: 720px;">
+                <h2 style="margin-top:0;">Write for Brevora</h2>
+                <p>We welcome pitches from architects, designers, historians, and writers. We are particularly interested in stories that combine technical insight with a clear, engaging voice.</p>
+                <p>We pay for all published work. Please send a short pitch (200–300 words) and a link to previous writing to <a href="mailto:editors@brevoralivinglines.com" style="color: var(--accent); font-weight:500;">editors@brevoralivinglines.com</a>.</p>
+            </div>
+        </section>
+
+        <!-- ========== NEWSLETTER ========== -->
+        <div class="newsletter-section">
+            <div class="newsletter-inner">
+                <h2>Brevora Letter</h2>
+                <p>Weekly stories on architecture, interiors, and material culture. No noise, just thoughtful reading.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Your email address" required aria-label="Email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+                <p style="font-size:0.75rem; margin-top:1rem; color:var(--muted);">We never share your data. Unsubscribe anytime.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>Brevora</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy</a></li>
+                        <li><a href="terms.html">Terms</a></li>
+                        <li><a href="cookies.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Sections</h4>
+                    <ul>
+                        <li><a href="#">Interior Design</a></li>
+                        <li><a href="#">Architecture</a></li>
+                        <li><a href="#">Materials</a></li>
+                        <li><a href="#">Lighting</a></li>
+                        <li><a href="#">Space Planning</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>More</h4>
+                    <ul>
+                        <li><a href="#">Home Design</a></li>
+                        <li><a href="#">Furniture</a></li>
+                        <li><a href="#">Modern Homes</a></li>
+                        <li><a href="#">Renovation</a></li>
+                        <li><a href="#">Design Mistakes</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Pinterest</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">RSS</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>© 2025 Brevora Living Lines. Independent editorial.</div>
+                <div>Made with care for design readers.</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== JAVASCRIPT (minimal) ========== -->
+    <script>
+        (function() {
+            // Newsletter form demo
+            const newsletterForm = document.getElementById('newsletterForm');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const input = this.querySelector('input[type="email"]');
+                    if (input && input.value) {
+                        alert('Thank you for subscribing to Brevora Letter. (Demo only)');
+                        input.value = '';
+                    }
+                });
+            }
+            // Active nav link (if needed, but we set class manually)
+        })();
+    </script>
+</body>
+</html>

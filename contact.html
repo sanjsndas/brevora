@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact · Brevora Living Lines</title>
+    <meta name="description" content="Reach the Brevora Living Lines editorial team — story pitches, collaborations, or just a thoughtful note about design.">
+    <meta name="author" content="Brevora Editorial">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://brevoralivinglines.com/contact.html">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contact · Brevora Living Lines">
+    <meta property="og:description" content="Get in touch with the editors of Brevora Living Lines — pitches, feedback, and design conversations.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://brevoralivinglines.com/contact.html">
+    <meta property="og:image" content="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1200">
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "name": "Contact Brevora Living Lines",
+            "description": "Contact page for editorial inquiries, pitches, and collaborations.",
+            "url": "https://brevoralivinglines.com/contact.html"
+        }
+    </script>
+    <style>
+        /* ----- RESET & GLOBAL (same as index) ----- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root {
+            --paper: #fbf9f6;
+            --ink: #1e1c1a;
+            --ink-soft: #3d3a37;
+            --muted: #6b6560;
+            --accent: #b75e3a;
+            --accent-soft: #d9c7bc;
+            --border-light: #e3ddd6;
+            --card-bg: #ffffff;
+            --sidebar-bg: #f4f0eb;
+            --serif: 'Georgia', 'Times New Roman', 'Times', serif;
+            --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+        body {
+            background: var(--paper);
+            color: var(--ink);
+            font-family: var(--sans);
+            font-size: 1rem;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        a:hover {
+            color: var(--accent);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 4px;
+        }
+        .container {
+            max-width: 1320px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ----- TYPOGRAPHY (editorial) ----- */
+        h1, h2, h3, h4 {
+            font-family: var(--serif);
+            font-weight: 500;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.75rem;
+        }
+        h2 {
+            font-size: 2rem;
+            margin: 2rem 0 1rem;
+            letter-spacing: -0.01em;
+        }
+        h3 {
+            font-size: 1.4rem;
+            margin: 1.8rem 0 0.6rem;
+            font-weight: 500;
+        }
+        p {
+            margin-bottom: 1.4rem;
+            color: var(--ink-soft);
+            font-size: 1.05rem;
+        }
+        .small-caps {
+            font-family: var(--sans);
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: var(--muted);
+        }
+
+        /* ----- HEADER / LOGO (same as index) ----- */
+        .site-header {
+            border-bottom: 1px solid var(--border-light);
+            background: var(--paper);
+            padding: 1.8rem 0 1.2rem;
+        }
+        .header-inner {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            justify-content: space-between;
+        }
+        .logo {
+            font-family: var(--serif);
+            font-size: 2.1rem;
+            font-weight: 600;
+            letter-spacing: -0.04em;
+            color: var(--ink);
+            line-height: 1;
+        }
+        .logo span {
+            color: var(--accent);
+            font-style: italic;
+            font-weight: 400;
+        }
+        .tagline {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: var(--muted);
+            margin-top: 0.3rem;
+        }
+        .main-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.8rem;
+            margin-top: 0.6rem;
+        }
+        .main-nav a {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--ink-soft);
+            padding-bottom: 0.2rem;
+            border-bottom: 1px solid transparent;
+        }
+        .main-nav a:hover {
+            border-bottom-color: var(--accent);
+            color: var(--ink);
+        }
+
+        /* ----- CONTACT LAYOUT ----- */
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 1fr 380px;
+            gap: 3.5rem;
+            margin: 2.5rem 0 4rem;
+        }
+        @media (max-width: 900px) {
+            .contact-layout {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        /* ----- CONTACT FORM ----- */
+        .contact-form-wrap {
+            background: var(--card-bg);
+            padding: 2.5rem 2.2rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-light);
+            box-shadow: 0 2px 12px rgba(0,0,0,0.02);
+        }
+        .contact-form-wrap h2 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            font-size: 1.8rem;
+        }
+        .contact-form-wrap .form-subhead {
+            color: var(--muted);
+            margin-bottom: 2rem;
+            font-size: 0.98rem;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--ink-soft);
+            margin-bottom: 0.4rem;
+        }
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.85rem 1rem;
+            border: 1px solid var(--border-light);
+            border-radius: 6px;
+            font-family: var(--sans);
+            font-size: 0.95rem;
+            background: var(--paper);
+            transition: border 0.2s;
+            outline: none;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: var(--accent);
+            background: white;
+        }
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        @media (max-width: 550px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+        .btn-submit {
+            background: var(--ink);
+            color: white;
+            border: none;
+            padding: 1rem 2.5rem;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: background 0.2s;
+            font-family: var(--sans);
+            margin-top: 0.5rem;
+        }
+        .btn-submit:hover {
+            background: var(--accent);
+        }
+        .form-note {
+            font-size: 0.8rem;
+            color: var(--muted);
+            margin-top: 1rem;
+        }
+
+        /* ----- CONTACT INFO SIDEBAR ----- */
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .info-card {
+            background: var(--sidebar-bg);
+            padding: 1.8rem 1.8rem;
+            border-radius: 8px;
+        }
+        .info-card h3 {
+            font-family: var(--serif);
+            font-size: 1.3rem;
+            margin: 0 0 0.8rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-light);
+        }
+        .info-card p {
+            font-size: 0.95rem;
+            margin-bottom: 0.6rem;
+            color: var(--ink-soft);
+        }
+        .info-card .label {
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--muted);
+        }
+        .info-card ul {
+            list-style: none;
+            margin-top: 0.5rem;
+        }
+        .info-card li {
+            font-size: 0.95rem;
+            margin-bottom: 0.8rem;
+            padding-left: 0;
+        }
+        .info-card li a {
+            color: var(--accent);
+            font-weight: 500;
+        }
+        .info-card li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Editor box (same as index) */
+        .editor-box {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 6px;
+            border: 1px solid var(--border-light);
+        }
+        .editor-box img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .editor-box p {
+            font-size: 0.9rem;
+            margin-bottom: 0;
+            color: var(--ink-soft);
+        }
+
+        /* ----- FAQ MINI (reuse style) ----- */
+        .faq-mini {
+            margin-top: 0.5rem;
+        }
+        .faq-mini .faq-item {
+            border-bottom: 1px solid var(--border-light);
+            padding: 0.8rem 0;
+        }
+        .faq-mini .faq-question {
+            font-family: var(--sans);
+            font-size: 0.95rem;
+            font-weight: 500;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            color: var(--ink-soft);
+        }
+        .faq-mini .faq-question span {
+            font-size: 1.2rem;
+            color: var(--muted);
+            transition: transform 0.2s;
+        }
+        .faq-mini .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            color: var(--muted);
+            font-size: 0.9rem;
+            padding-right: 0.5rem;
+        }
+        .faq-mini .faq-answer p {
+            margin-top: 0.4rem;
+            margin-bottom: 0.2rem;
+            font-size: 0.9rem;
+        }
+        .faq-mini .faq-item.open .faq-answer {
+            max-height: 200px;
+        }
+        .faq-mini .faq-item.open .faq-question span {
+            transform: rotate(45deg);
+        }
+
+        /* ----- FOOTER (same as index) ----- */
+        .site-footer {
+            background: #1e1c1a;
+            color: #d9d2ca;
+            padding: 3rem 0 2rem;
+            margin-top: 2rem;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 2.5rem;
+        }
+        .footer-grid h4 {
+            color: white;
+            font-family: var(--sans);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1.2rem;
+        }
+        .footer-grid ul {
+            list-style: none;
+        }
+        .footer-grid li {
+            margin-bottom: 0.7rem;
+            font-size: 0.9rem;
+        }
+        .footer-grid a {
+            color: #b9b1a8;
+        }
+        .footer-grid a:hover {
+            color: white;
+        }
+        .footer-bottom {
+            border-top: 1px solid #3a3633;
+            padding-top: 1.8rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            color: #8f8780;
+        }
+
+        /* utility */
+        .text-accent { color: var(--accent); }
+        .hidden { display: none !important; }
+        .mt-2 { margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <!-- ========== HEADER ========== -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <div>
+                <div class="logo">Brevora <span>Living Lines</span></div>
+                <div class="tagline">Interior · Architecture · Material Culture</div>
+            </div>
+            <nav class="main-nav" aria-label="Main">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" style="border-bottom-color: var(--accent); color: var(--ink);">Contact</a></li>
+                <li><a href="terms.html">Terms Of Privacy</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="cookies.html">Cookies Policy</a></li>
+                <li><a href="disclaimer.html">Disclaimer</a></li>
+                <li><a href="categories.html">Categories</a></li>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" id="main-content">
+        <!-- ========== CONTACT LAYOUT ========== -->
+        <div class="contact-layout">
+            <!-- LEFT: FORM -->
+            <div class="contact-form-wrap">
+                <div class="small-caps" style="margin-bottom:0.3rem;">Reach the editors</div>
+                <h2>Let’s talk design, space, and material</h2>
+                <p class="form-subhead">Pitches, collaborations, feedback, or simply a thoughtful note — we read every message.</p>
+
+                <form id="contactForm" action="#" method="post">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your name *</label>
+                            <input type="text" id="name" name="name" placeholder="Elena Marchetti" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address *</label>
+                            <input type="email" id="email" name="email" placeholder="elena@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject">
+                            <option value="pitch">Story pitch / editorial</option>
+                            <option value="collab">Collaboration / partnership</option>
+                            <option value="feedback">Feedback on an article</option>
+                            <option value="general">General inquiry</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" placeholder="Tell us what’s on your mind…" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Send message</button>
+                    <p class="form-note">* Required fields. We typically respond within 2–3 working days.</p>
+                </form>
+            </div>
+
+            <!-- RIGHT: INFO SIDEBAR -->
+            <aside class="contact-info">
+                <!-- Direct contact -->
+                <div class="info-card">
+                    <h3>Editorial office</h3>
+                    <p><span class="label">Email</span><br><a href="mailto:editor@brevoralivinglines.com">editor@brevoralivinglines.com</a></p>
+                    <p><span class="label">Pitches</span><br><a href="mailto:pitches@brevoralivinglines.com">pitches@brevoralivinglines.com</a></p>
+                    <p><span class="label">Phone</span><br>+1 (415) 555‑0198</p>
+                    <p><span class="label">Hours</span><br>Mon–Fri · 10am–5pm PT</p>
+                </div>
+
+                <!-- Editor box -->
+                <div class="editor-box">
+                    <img src="https://images.pexels.com/photos/3765114/pexels-photo-3765114.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Portrait of editor Elena Marchetti">
+                    <div>
+                        <div class="small-caps">Editor-in-Chief</div>
+                        <p style="font-weight:500; margin-bottom:0.2rem;">Elena Marchetti</p>
+                        <p style="font-size:0.8rem;">Architect and writer. Exploring the intersection of material, light, and human experience.</p>
+                    </div>
+                </div>
+
+                <!-- Social / follow -->
+                <div class="info-card">
+                    <h3>Follow & listen</h3>
+                    <ul>
+                        <li><a href="#">Instagram → @brevoralivinglines</a></li>
+                        <li><a href="#">Pinterest → /brevoraliving</a></li>
+                        <li><a href="#">Newsletter → Brevora Letter</a></li>
+                        <li><a href="#">RSS → /feed</a></li>
+                    </ul>
+                </div>
+
+                <!-- Mini FAQ -->
+                <div class="info-card">
+                    <h3>Quick answers</h3>
+                    <div class="faq-mini" id="faqMini">
+                        <div class="faq-item">
+                            <div class="faq-question">Do you accept guest posts? <span>+</span></div>
+                            <div class="faq-answer"><p>We occasionally publish guest contributions from architects, designers, and writers. Send a short pitch first.</p></div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">How fast do you reply? <span>+</span></div>
+                            <div class="faq-answer"><p>Usually within 2–3 business days. For urgent press inquiries, please mark your subject line “URGENT”.</p></div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">Can I republish an article? <span>+</span></div>
+                            <div class="faq-answer"><p>Please email us for permission. We’re generally open to syndication with proper attribution.</p></div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <!-- ========== SMALL NOTE / BANNER ========== -->
+        <div style="background: var(--sidebar-bg); padding: 1.8rem 2rem; border-radius: 8px; margin-bottom: 3rem; text-align: center;">
+            <p style="margin:0; font-size:0.95rem; color: var(--ink-soft);"><span style="font-weight:600;">Brevora Living Lines</span> is an independent editorial platform. We do not accept sponsored posts that compromise our editorial integrity. <a href="#" style="color: var(--accent); font-weight:500;">Read our ethics →</a></p>
+        </div>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>Brevora</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Sections</h4>
+                    <ul>
+                        <li><a href="#">Interior Design</a></li>
+                        <li><a href="#">Architecture</a></li>
+                        <li><a href="#">Materials</a></li>
+                        <li><a href="#">Lighting</a></li>
+                        <li><a href="#">Space Planning</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>More</h4>
+                    <ul>
+                        <li><a href="#">Home Design</a></li>
+                        <li><a href="#">Furniture</a></li>
+                        <li><a href="#">Modern Homes</a></li>
+                        <li><a href="#">Renovation</a></li>
+                        <li><a href="#">Design Mistakes</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Pinterest</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">RSS</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>© 2025 Brevora Living Lines. Independent editorial.</div>
+                <div>Made with care for design readers.</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== JAVASCRIPT ========== -->
+    <script>
+        (function() {
+            // ----- FAQ ACCORDION (mini) -----
+            document.querySelectorAll('.faq-item').forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        item.classList.toggle('open');
+                    });
+                }
+            });
+
+            // ----- CONTACT FORM (demo) -----
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    // simple validation
+                    const name = document.getElementById('name').value.trim();
+                    const email = document.getElementById('email').value.trim();
+                    const message = document.getElementById('message').value.trim();
+                    if (!name || !email || !message) {
+                        alert('Please fill in all required fields (*).');
+                        return;
+                    }
+                    alert('Thank you, ' + name + '. Your message has been sent (demo only). We’ll get back to you soon.');
+                    contactForm.reset();
+                });
+            }
+
+            // ----- SMOOTH SCROLL FOR INTERNAL LINKS (optional) -----
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    const targetEl = document.querySelector(targetId);
+                    if (targetEl) {
+                        e.preventDefault();
+                        targetEl.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+        })();
+    </script>
+</body>
+</html>

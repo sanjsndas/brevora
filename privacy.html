@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy · Brevora Living Lines</title>
+    <meta name="description" content="Privacy policy for Brevora Living Lines — how we handle your data, cookies, and editorial independence.">
+    <meta name="author" content="Brevora Editorial">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://brevoralivinglines.com/privacy.html">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Privacy Policy · Brevora Living Lines">
+    <meta property="og:description" content="How Brevora Living Lines collects, uses, and protects your information.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://brevoralivinglines.com/privacy.html">
+    <meta property="og:image" content="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1200">
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Privacy Policy — Brevora Living Lines",
+            "description": "Privacy policy for Brevora Living Lines.",
+            "url": "https://brevoralivinglines.com/privacy.html"
+        }
+    </script>
+    <style>
+        /* ----- RESET & GLOBAL (consistent with contact/index) ----- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root {
+            --paper: #fbf9f6;
+            --ink: #1e1c1a;
+            --ink-soft: #3d3a37;
+            --muted: #6b6560;
+            --accent: #b75e3a;
+            --accent-soft: #d9c7bc;
+            --border-light: #e3ddd6;
+            --card-bg: #ffffff;
+            --sidebar-bg: #f4f0eb;
+            --serif: 'Georgia', 'Times New Roman', 'Times', serif;
+            --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+        body {
+            background: var(--paper);
+            color: var(--ink);
+            font-family: var(--sans);
+            font-size: 1rem;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        a:hover {
+            color: var(--accent);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 4px;
+        }
+        .container {
+            max-width: 1320px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ----- TYPOGRAPHY (editorial) ----- */
+        h1, h2, h3, h4 {
+            font-family: var(--serif);
+            font-weight: 500;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.75rem;
+        }
+        h2 {
+            font-size: 1.8rem;
+            margin: 2.2rem 0 1rem;
+            letter-spacing: -0.01em;
+            font-weight: 500;
+        }
+        h3 {
+            font-size: 1.3rem;
+            margin: 1.8rem 0 0.6rem;
+            font-weight: 500;
+        }
+        p {
+            margin-bottom: 1.4rem;
+            color: var(--ink-soft);
+            font-size: 1.05rem;
+        }
+        .small-caps {
+            font-family: var(--sans);
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: var(--muted);
+        }
+
+        /* ----- HEADER / LOGO (same as contact) ----- */
+        .site-header {
+            border-bottom: 1px solid var(--border-light);
+            background: var(--paper);
+            padding: 1.8rem 0 1.2rem;
+        }
+        .header-inner {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            justify-content: space-between;
+        }
+        .logo {
+            font-family: var(--serif);
+            font-size: 2.1rem;
+            font-weight: 600;
+            letter-spacing: -0.04em;
+            color: var(--ink);
+            line-height: 1;
+        }
+        .logo span {
+            color: var(--accent);
+            font-style: italic;
+            font-weight: 400;
+        }
+        .tagline {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: var(--muted);
+            margin-top: 0.3rem;
+        }
+        .main-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.8rem;
+            margin-top: 0.6rem;
+        }
+        .main-nav a {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--ink-soft);
+            padding-bottom: 0.2rem;
+            border-bottom: 1px solid transparent;
+        }
+        .main-nav a:hover {
+            border-bottom-color: var(--accent);
+            color: var(--ink);
+        }
+
+        /* ----- PRIVACY LAYOUT ----- */
+        .privacy-layout {
+            display: grid;
+            grid-template-columns: 1fr 320px;
+            gap: 3.5rem;
+            margin: 2.8rem 0 4rem;
+        }
+        @media (max-width: 950px) {
+            .privacy-layout {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+        }
+
+        .privacy-content {
+            background: var(--card-bg);
+            padding: 2.8rem 2.8rem 3rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-light);
+            box-shadow: 0 2px 12px rgba(0,0,0,0.02);
+        }
+        .privacy-content h1 {
+            font-size: 2.4rem;
+            margin-bottom: 0.5rem;
+        }
+        .privacy-content .last-updated {
+            font-size: 0.85rem;
+            color: var(--muted);
+            margin-bottom: 2.2rem;
+            padding-bottom: 1.2rem;
+            border-bottom: 1px solid var(--border-light);
+        }
+        .privacy-content h2 {
+            font-size: 1.6rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .privacy-content h2:first-of-type {
+            margin-top: 0.8rem;
+        }
+        .privacy-content ul, .privacy-content ol {
+            margin: 0 0 1.6rem 1.8rem;
+            color: var(--ink-soft);
+            font-size: 1.02rem;
+        }
+        .privacy-content li {
+            margin-bottom: 0.6rem;
+        }
+        .privacy-content .highlight-box {
+            background: var(--sidebar-bg);
+            padding: 1.6rem 1.8rem;
+            border-radius: 6px;
+            margin: 2rem 0;
+            border-left: 3px solid var(--accent);
+        }
+        .privacy-content .highlight-box p {
+            margin-bottom: 0;
+            font-size: 0.98rem;
+        }
+
+        /* ----- SIDEBAR (privacy) ----- */
+        .privacy-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 1.8rem;
+        }
+        .sidebar-card {
+            background: var(--sidebar-bg);
+            padding: 1.8rem 1.6rem;
+            border-radius: 8px;
+        }
+        .sidebar-card h3 {
+            font-family: var(--serif);
+            font-size: 1.25rem;
+            margin: 0 0 0.8rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-light);
+        }
+        .sidebar-card ul {
+            list-style: none;
+            margin: 0;
+        }
+        .sidebar-card li {
+            font-size: 0.92rem;
+            margin-bottom: 0.7rem;
+            color: var(--ink-soft);
+        }
+        .sidebar-card li a {
+            color: var(--accent);
+            font-weight: 500;
+        }
+        .sidebar-card li a:hover {
+            text-decoration: underline;
+        }
+        .sidebar-card p {
+            font-size: 0.92rem;
+            margin-bottom: 0.8rem;
+            color: var(--ink-soft);
+        }
+        .sidebar-card .small-note {
+            font-size: 0.8rem;
+            color: var(--muted);
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-light);
+        }
+        .editor-box {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            background: var(--card-bg);
+            padding: 1.3rem;
+            border-radius: 6px;
+            border: 1px solid var(--border-light);
+        }
+        .editor-box img {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .editor-box p {
+            font-size: 0.85rem;
+            margin-bottom: 0;
+            color: var(--ink-soft);
+        }
+
+        /* ----- FOOTER (same) ----- */
+        .site-footer {
+            background: #1e1c1a;
+            color: #d9d2ca;
+            padding: 3rem 0 2rem;
+            margin-top: 2rem;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 2.5rem;
+        }
+        .footer-grid h4 {
+            color: white;
+            font-family: var(--sans);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1.2rem;
+        }
+        .footer-grid ul {
+            list-style: none;
+        }
+        .footer-grid li {
+            margin-bottom: 0.7rem;
+            font-size: 0.9rem;
+        }
+        .footer-grid a {
+            color: #b9b1a8;
+        }
+        .footer-grid a:hover {
+            color: white;
+        }
+        .footer-bottom {
+            border-top: 1px solid #3a3633;
+            padding-top: 1.8rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            color: #8f8780;
+        }
+
+        .mt-2 { margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <!-- ========== HEADER ========== -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <div>
+                <div class="logo">Brevora <span>Living Lines</span></div>
+                <div class="tagline">Interior · Architecture · Material Culture</div>
+            </div>
+            <nav class="main-nav" aria-label="Main">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="terms.html">Terms Of Privacy</a></li>
+                <li><a href="privacy.html" style="border-bottom-color: var(--accent); color: var(--ink);">Privacy Policy</a></li>
+                <li><a href="cookies.html">Cookies Policy</a></li>
+                <li><a href="disclaimer.html">Disclaimer</a></li>
+                <li><a href="categories.html">Categories</a></li>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" id="main-content">
+        <!-- ========== PRIVACY LAYOUT ========== -->
+        <div class="privacy-layout">
+            <!-- LEFT: PRIVACY CONTENT -->
+            <article class="privacy-content">
+                <div class="small-caps" style="margin-bottom:0.4rem;">Legal · Data protection</div>
+                <h1>Privacy Policy</h1>
+                <div class="last-updated">Last updated: 14 April 2025 · Effective immediately</div>
+
+                <p>Brevora Living Lines (“we”, “us”, “our”) operates the website brevoralivinglines.com and is committed to protecting your privacy. This policy explains what information we collect, how we use it, and the choices you have. By using our site, you agree to the practices described here.</p>
+
+                <div class="highlight-box">
+                    <p><strong>Editorial independence & privacy:</strong> We do not sell, rent, or trade your personal information. Our journalism is funded by reader support and non-intrusive advertising. Your trust matters.</p>
+                </div>
+
+                <h2>1. Information we collect</h2>
+                <p>We collect information in three ways:</p>
+                <ul>
+                    <li><strong>Information you provide directly</strong> — when you contact us via forms, subscribe to our newsletter, or comment on articles. This may include your name, email address, and message content.</li>
+                    <li><strong>Information collected automatically</strong> — like most websites, we use cookies and similar technologies to gather technical data: IP address, browser type, device information, pages visited, and referring URLs. This helps us understand how readers use the site.</li>
+                    <li><strong>Information from third parties</strong> — if you interact with our social media pages or use third-party tools embedded on our site (e.g., embedded videos, analytics), those services may share limited data with us.</li>
+                </ul>
+
+                <h2>2. How we use your information</h2>
+                <p>We use collected data for the following purposes:</p>
+                <ul>
+                    <li>To respond to your inquiries, pitches, or feedback.</li>
+                    <li>To send you our newsletter if you have opted in (you can unsubscribe at any time).</li>
+                    <li>To analyze site traffic and improve our editorial content and user experience.</li>
+                    <li>To maintain the security and integrity of our website.</li>
+                    <li>To comply with legal obligations.</li>
+                </ul>
+
+                <h2>3. Cookies and tracking technologies</h2>
+                <p>We use cookies to remember your preferences, measure site performance, and understand which articles resonate. You can control cookie settings in your browser at any time. Disabling cookies may affect certain features of the site. For more details, see our <a href="cookies.html" style="color: var(--accent); font-weight:500;">Cookies Policy</a>.</p>
+
+                <h2>4. Data sharing and disclosure</h2>
+                <p>We do not sell your personal data. We may share information only in these limited circumstances:</p>
+                <ul>
+                    <li><strong>Service providers:</strong> Trusted third parties (e.g., email delivery, analytics) that assist our operations under strict confidentiality agreements.</li>
+                    <li><strong>Legal requirements:</strong> If required by law, court order, or to protect the rights and safety of Brevora Living Lines, our readers, or the public.</li>
+                    <li><strong>Business transfers:</strong> In the unlikely event of a merger or acquisition, your data may be transferred as part of the assets, but this policy would continue to apply.</li>
+                </ul>
+
+                <h2>5. Your rights and choices</h2>
+                <p>Depending on your location, you may have the following rights regarding your personal data:</p>
+                <ul>
+                    <li>Access, correct, or delete the information we hold about you.</li>
+                    <li>Opt out of marketing communications (every newsletter includes an unsubscribe link).</li>
+                    <li>Request that we restrict or object to certain processing.</li>
+                    <li>Lodge a complaint with a supervisory authority.</li>
+                </ul>
+                <p>To exercise any of these rights, please email us at <a href="mailto:privacy@brevoralivinglines.com" style="color: var(--accent); font-weight:500;">privacy@brevoralivinglines.com</a>. We will respond within 30 days.</p>
+
+                <h2>6. Data retention and security</h2>
+                <p>We retain personal data only as long as necessary for the purposes outlined above, or as required by law. We implement reasonable technical and organizational measures to protect your information against unauthorized access, loss, or misuse. However, no internet transmission is completely secure — please take care when sharing personal details online.</p>
+
+                <h2>7. Children’s privacy</h2>
+                <p>Brevora Living Lines is not directed at children under 16. We do not knowingly collect personal information from children. If you believe a child has provided us with data, please contact us so we can delete it.</p>
+
+                <h2>8. International transfers</h2>
+                <p>Our servers are located in the United States. If you access our site from outside the US, your information may be transferred to and processed in the US. By using our site, you consent to this transfer, which is necessary to provide our services.</p>
+
+                <h2>9. Changes to this policy</h2>
+                <p>We may update this Privacy Policy from time to time. When we do, we will revise the “last updated” date at the top of this page. We encourage you to review this page periodically to stay informed about how we protect your data.</p>
+
+                <h2>10. Contact us</h2>
+                <p>If you have questions about this Privacy Policy or our data practices, please reach out:</p>
+                <ul style="list-style: none; margin-left: 0;">
+                    <li style="margin-bottom:0.4rem;"><strong>Email:</strong> <a href="mailto:privacy@brevoralivinglines.com" style="color: var(--accent); font-weight:500;">privacy@brevoralivinglines.com</a></li>
+                    <li style="margin-bottom:0.4rem;"><strong>Post:</strong> Brevora Living Lines, Editorial Office, 450 Mission St, San Francisco, CA 94105, USA</li>
+                </ul>
+            </article>
+
+            <!-- RIGHT: SIDEBAR (privacy navigation + editor) -->
+            <aside class="privacy-sidebar">
+                <div class="sidebar-card">
+                    <h3>On this page</h3>
+                    <ul>
+                        <li><a href="#info-collect">1. Information we collect</a></li>
+                        <li><a href="#how-use">2. How we use your information</a></li>
+                        <li><a href="#cookies">3. Cookies & tracking</a></li>
+                        <li><a href="#sharing">4. Data sharing</a></li>
+                        <li><a href="#rights">5. Your rights</a></li>
+                        <li><a href="#retention">6. Retention & security</a></li>
+                        <li><a href="#children">7. Children’s privacy</a></li>
+                        <li><a href="#transfers">8. International transfers</a></li>
+                        <li><a href="#changes">9. Changes</a></li>
+                        <li><a href="#contact-privacy">10. Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="editor-box">
+                    <img src="https://images.pexels.com/photos/3765114/pexels-photo-3765114.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Portrait of editor Elena Marchetti">
+                    <div>
+                        <div class="small-caps">Data protection</div>
+                        <p style="font-weight:500; margin-bottom:0.2rem;">Elena Marchetti</p>
+                        <p style="font-size:0.8rem;">For privacy-related inquiries, you may also write directly to our editorial office.</p>
+                    </div>
+                </div>
+
+                <div class="sidebar-card">
+                    <h3>Related policies</h3>
+                    <ul>
+                        <li><a href="terms.html">Terms of Use</a></li>
+                        <li><a href="cookies.html">Cookies Policy</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                        <li><a href="contact.html">Contact the editors</a></li>
+                    </ul>
+                    <p class="small-note">Brevora Living Lines is an independent editorial platform. We never sell reader data.</p>
+                </div>
+            </aside>
+        </div>
+
+        <!-- ========== SMALL BANNER (consistent with contact) ========== -->
+        <div style="background: var(--sidebar-bg); padding: 1.8rem 2rem; border-radius: 8px; margin-bottom: 3rem; text-align: center;">
+            <p style="margin:0; font-size:0.95rem; color: var(--ink-soft);"><span style="font-weight:600;">Brevora Living Lines</span> respects your privacy. We collect only what we need to improve your reading experience. <a href="cookies.html" style="color: var(--accent); font-weight:500;">Learn about cookies →</a></p>
+        </div>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>Brevora</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy</a></li>
+                        <li><a href="terms.html">Terms</a></li>
+                        <li><a href="cookies.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Sections</h4>
+                    <ul>
+                        <li><a href="#">Interior Design</a></li>
+                        <li><a href="#">Architecture</a></li>
+                        <li><a href="#">Materials</a></li>
+                        <li><a href="#">Lighting</a></li>
+                        <li><a href="#">Space Planning</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>More</h4>
+                    <ul>
+                        <li><a href="#">Home Design</a></li>
+                        <li><a href="#">Furniture</a></li>
+                        <li><a href="#">Modern Homes</a></li>
+                        <li><a href="#">Renovation</a></li>
+                        <li><a href="#">Design Mistakes</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Pinterest</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">RSS</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>© 2025 Brevora Living Lines. Independent editorial.</div>
+                <div>Made with care for design readers.</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== JAVASCRIPT (smooth anchors, no form) ========== -->
+    <script>
+        (function() {
+            // Smooth scroll for anchor links inside the page
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    const targetEl = document.querySelector(targetId);
+                    if (targetEl) {
+                        e.preventDefault();
+                        targetEl.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+        })();
+    </script>
+</body>
+</html>

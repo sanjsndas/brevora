@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brevora Living Lines · Interior Design & Architecture Journal</title>
+    <meta name="description" content="Brevora Living Lines – an independent editorial publication exploring interior design, architecture, materials, space planning, and the art of living well.">
+    <meta name="author" content="Brevora Editorial">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://brevoralivinglines.com/">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Brevora Living Lines · Interior Design & Architecture Journal">
+    <meta property="og:description" content="Independent stories on interior design, architecture, materials, lighting, and the poetics of space.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://brevoralivinglines.com/">
+    <meta property="og:image" content="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1200">
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Blog",
+            "name": "Brevora Living Lines",
+            "description": "Independent editorial on interior design, architecture, and thoughtful living.",
+            "url": "https://brevoralivinglines.com/",
+            "author": {
+                "@type": "Person",
+                "name": "Elena Marchetti"
+            }
+        }
+    </script>
+    <style>
+        /* ----- RESET & GLOBAL ----- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root {
+            --paper: #fbf9f6;
+            --ink: #1e1c1a;
+            --ink-soft: #3d3a37;
+            --muted: #6b6560;
+            --accent: #b75e3a;
+            --accent-soft: #d9c7bc;
+            --border-light: #e3ddd6;
+            --card-bg: #ffffff;
+            --sidebar-bg: #f4f0eb;
+            --serif: 'Georgia', 'Times New Roman', 'Times', serif;
+            --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+        body {
+            background: var(--paper);
+            color: var(--ink);
+            font-family: var(--sans);
+            font-size: 1rem;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        a:hover {
+            color: var(--accent);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 4px;
+        }
+        .container {
+            max-width: 1320px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ----- TYPOGRAPHY (editorial) ----- */
+        h1, h2, h3, h4 {
+            font-family: var(--serif);
+            font-weight: 500;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.75rem;
+        }
+        h2 {
+            font-size: 2rem;
+            margin: 2rem 0 1rem;
+            letter-spacing: -0.01em;
+        }
+        h3 {
+            font-size: 1.4rem;
+            margin: 1.8rem 0 0.6rem;
+            font-weight: 500;
+        }
+        p {
+            margin-bottom: 1.4rem;
+            color: var(--ink-soft);
+            font-size: 1.05rem;
+        }
+        .article-body p {
+            font-size: 1.08rem;
+            line-height: 1.7;
+        }
+        .small-caps {
+            font-family: var(--sans);
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: var(--muted);
+        }
+
+        /* ----- HEADER / LOGO ----- */
+        .site-header {
+            border-bottom: 1px solid var(--border-light);
+            background: var(--paper);
+            padding: 1.8rem 0 1.2rem;
+        }
+        .header-inner {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            justify-content: space-between;
+        }
+        .logo {
+            font-family: var(--serif);
+            font-size: 2.1rem;
+            font-weight: 600;
+            letter-spacing: -0.04em;
+            color: var(--ink);
+            line-height: 1;
+        }
+        .logo span {
+            color: var(--accent);
+            font-style: italic;
+            font-weight: 400;
+        }
+        .tagline {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: var(--muted);
+            margin-top: 0.3rem;
+        }
+        .main-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.8rem;
+            margin-top: 0.6rem;
+        }
+        .main-nav a {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--ink-soft);
+            padding-bottom: 0.2rem;
+            border-bottom: 1px solid transparent;
+        }
+        .main-nav a:hover {
+            border-bottom-color: var(--accent);
+            color: var(--ink);
+        }
+
+        /* ----- SEARCH / FILTER BAR ----- */
+        .filter-bar {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 1rem 0 1.8rem;
+            border-bottom: 1px solid var(--border-light);
+            margin-bottom: 2.5rem;
+        }
+        .search-wrap {
+            flex: 1 1 260px;
+            max-width: 360px;
+        }
+        .search-wrap input {
+            width: 100%;
+            padding: 0.65rem 1rem;
+            border: 1px solid var(--border-light);
+            background: var(--card-bg);
+            font-family: var(--sans);
+            font-size: 0.9rem;
+            border-radius: 30px;
+            outline: none;
+            transition: border 0.2s;
+        }
+        .search-wrap input:focus {
+            border-color: var(--accent);
+        }
+        .category-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+        }
+        .cat-pill {
+            background: transparent;
+            border: 1px solid var(--border-light);
+            padding: 0.4rem 1rem;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: var(--ink-soft);
+            cursor: pointer;
+            transition: all 0.2s;
+            font-family: var(--sans);
+        }
+        .cat-pill:hover,
+        .cat-pill.active {
+            background: var(--accent);
+            border-color: var(--accent);
+            color: white;
+        }
+
+        /* ----- GRID LAYOUT (main + sidebar) ----- */
+        .blog-layout {
+            display: grid;
+            grid-template-columns: 1fr 320px;
+            gap: 3rem;
+            margin-bottom: 4rem;
+        }
+        @media (max-width: 1000px) {
+            .blog-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ----- FEATURED AREA ----- */
+        .featured-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 2rem;
+            margin-bottom: 2.5rem;
+            align-items: start;
+        }
+        @media (max-width: 700px) {
+            .featured-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .featured-main img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+        .featured-main .cat {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+        }
+        .featured-main h2 {
+            font-size: 1.9rem;
+            margin: 0.2rem 0 0.6rem;
+            line-height: 1.2;
+        }
+        .featured-main .excerpt {
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+        .featured-side {
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+        }
+        .side-feature {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+        .side-feature img {
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+            flex-shrink: 0;
+            border-radius: 3px;
+        }
+        .side-feature .meta {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            color: var(--accent);
+            letter-spacing: 0.08em;
+            font-weight: 600;
+        }
+        .side-feature h4 {
+            font-family: var(--serif);
+            font-size: 1.1rem;
+            margin: 0.2rem 0 0.2rem;
+            line-height: 1.3;
+        }
+        .side-feature .read-time {
+            font-size: 0.75rem;
+            color: var(--muted);
+        }
+
+        /* ----- ARTICLE LIST ----- */
+        .article-list {
+            display: flex;
+            flex-direction: column;
+            gap: 2.2rem;
+        }
+        .article-card {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 1.8rem;
+            padding-bottom: 2.2rem;
+            border-bottom: 1px solid var(--border-light);
+        }
+        .article-card:last-child {
+            border-bottom: none;
+        }
+        @media (max-width: 600px) {
+            .article-card {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            .article-card img {
+                width: 100%;
+                height: 200px;
+            }
+        }
+        .article-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 3px;
+        }
+        .article-card .card-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: center;
+            margin-bottom: 0.3rem;
+        }
+        .article-card .cat {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent);
+            font-weight: 600;
+        }
+        .article-card .read {
+            font-size: 0.75rem;
+            color: var(--muted);
+        }
+        .article-card h3 {
+            font-size: 1.5rem;
+            margin: 0.2rem 0 0.5rem;
+            font-weight: 500;
+            line-height: 1.25;
+        }
+        .article-card .excerpt {
+            color: var(--muted);
+            font-size: 0.95rem;
+            margin-bottom: 0.6rem;
+        }
+        .article-card .author {
+            font-size: 0.8rem;
+            color: var(--muted);
+        }
+
+        /* ----- SIDEBAR ----- */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+        }
+        .sidebar-widget {
+            background: var(--sidebar-bg);
+            padding: 1.8rem 1.6rem;
+            border-radius: 6px;
+        }
+        .sidebar-widget h3 {
+            font-family: var(--serif);
+            font-size: 1.3rem;
+            margin: 0 0 1rem;
+            border-bottom: 1px solid var(--border-light);
+            padding-bottom: 0.6rem;
+        }
+        .sidebar-widget ul {
+            list-style: none;
+        }
+        .sidebar-widget li {
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+        .sidebar-widget li a {
+            font-weight: 500;
+            color: var(--ink-soft);
+        }
+        .sidebar-widget li a:hover {
+            color: var(--accent);
+        }
+        .sidebar-widget .widget-meta {
+            font-size: 0.75rem;
+            color: var(--muted);
+            display: block;
+        }
+        .editor-box {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 6px;
+            border: 1px solid var(--border-light);
+        }
+        .editor-box img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .editor-box p {
+            font-size: 0.9rem;
+            margin-bottom: 0;
+            color: var(--ink-soft);
+        }
+
+        /* ----- NEWSLETTER SECTION ----- */
+        .newsletter-section {
+            background: var(--sidebar-bg);
+            padding: 3rem 0;
+            margin: 2rem 0 3rem;
+            border-radius: 8px;
+        }
+        .newsletter-inner {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 0 1.5rem;
+        }
+        .newsletter-inner h2 {
+            margin-top: 0;
+        }
+        .newsletter-inner p {
+            color: var(--muted);
+            margin-bottom: 1.5rem;
+        }
+        .newsletter-form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            justify-content: center;
+        }
+        .newsletter-form input {
+            flex: 1 1 260px;
+            padding: 0.8rem 1.2rem;
+            border: 1px solid var(--border-light);
+            border-radius: 40px;
+            font-family: var(--sans);
+            font-size: 0.95rem;
+            background: white;
+        }
+        .newsletter-form button {
+            background: var(--ink);
+            color: white;
+            border: none;
+            padding: 0.8rem 2rem;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .newsletter-form button:hover {
+            background: var(--accent);
+        }
+
+        /* ----- FAQ SECTION ----- */
+        .faq-section {
+            margin: 3rem 0;
+        }
+        .faq-item {
+            border-bottom: 1px solid var(--border-light);
+            padding: 1.2rem 0;
+        }
+        .faq-question {
+            font-family: var(--serif);
+            font-size: 1.2rem;
+            font-weight: 500;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+        .faq-question span {
+            font-size: 1.5rem;
+            color: var(--muted);
+            transition: transform 0.2s;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+            color: var(--muted);
+            font-size: 0.98rem;
+            padding-right: 2rem;
+        }
+        .faq-answer p {
+            margin-top: 0.8rem;
+            margin-bottom: 0.2rem;
+        }
+        .faq-item.open .faq-answer {
+            max-height: 300px;
+        }
+        .faq-item.open .faq-question span {
+            transform: rotate(45deg);
+        }
+
+        /* ----- FOOTER ----- */
+        .site-footer {
+            background: #1e1c1a;
+            color: #d9d2ca;
+            padding: 3rem 0 2rem;
+            margin-top: 2rem;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 2.5rem;
+        }
+        .footer-grid h4 {
+            color: white;
+            font-family: var(--sans);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1.2rem;
+        }
+        .footer-grid ul {
+            list-style: none;
+        }
+        .footer-grid li {
+            margin-bottom: 0.7rem;
+            font-size: 0.9rem;
+        }
+        .footer-grid a {
+            color: #b9b1a8;
+        }
+        .footer-grid a:hover {
+            color: white;
+        }
+        .footer-bottom {
+            border-top: 1px solid #3a3633;
+            padding-top: 1.8rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            color: #8f8780;
+        }
+
+        /* ----- MISC / UTILS ----- */
+        .divider {
+            border: 0;
+            border-top: 1px solid var(--border-light);
+            margin: 2.5rem 0;
+        }
+        .text-accent {
+            color: var(--accent);
+        }
+        .hidden {
+            display: none !important;
+        }
+        .no-results {
+            padding: 2rem;
+            text-align: center;
+            color: var(--muted);
+            font-style: italic;
+        }
+
+        /* ----- ARTICLE DETAIL (long-form reading) ----- */
+        .article-detail {
+            max-width: 780px;
+            margin: 2rem auto;
+        }
+        .article-detail .article-header {
+            margin-bottom: 2rem;
+        }
+        .article-detail .article-header img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            margin: 1.5rem 0;
+        }
+        .article-detail .body-content {
+            font-size: 1.1rem;
+        }
+        .article-detail .body-content h3 {
+            margin-top: 2.2rem;
+        }
+        .article-detail .body-content blockquote {
+            border-left: 4px solid var(--accent);
+            padding-left: 1.8rem;
+            margin: 2rem 0;
+            font-family: var(--serif);
+            font-size: 1.3rem;
+            font-style: italic;
+            color: var(--ink);
+        }
+        .article-detail .body-content ul, .article-detail .body-content ol {
+            margin: 1.2rem 0 1.8rem 1.8rem;
+            color: var(--ink-soft);
+        }
+        .article-detail .body-content li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- ========== HEADER ========== -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <div>
+                <div class="logo">Brevora <span>Living Lines</span></div>
+                <div class="tagline">Interior · Architecture · Material Culture</div>
+            </div>
+            <nav class="main-nav" aria-label="Main">
+                <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="terms.html">Terms Of Privacy</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+					<li><a href="cookies.html">Cookies Policy</a></li> 
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" id="main-content">
+        <!-- ========== FILTER / SEARCH ========== -->
+        <div class="filter-bar">
+            <div class="search-wrap">
+                <input type="text" id="searchInput" placeholder="Search articles, topics, ideas…" aria-label="Search articles">
+            </div>
+            <div class="category-pills" id="categoryPills">
+                <button class="cat-pill active" data-cat="all">All</button>
+                <button class="cat-pill" data-cat="interior">Interior Design</button>
+                <button class="cat-pill" data-cat="architecture">Architecture</button>
+                <button class="cat-pill" data-cat="materials">Materials</button>
+                <button class="cat-pill" data-cat="lighting">Lighting</button>
+                <button class="cat-pill" data-cat="small-spaces">Small Spaces</button>
+                <button class="cat-pill" data-cat="sustainable">Sustainable</button>
+            </div>
+        </div>
+
+        <!-- ========== BLOG LAYOUT ========== -->
+        <div class="blog-layout">
+            <!-- MAIN COLUMN -->
+            <div>
+                <!-- FEATURED SECTION -->
+                <div class="featured-grid">
+                    <div class="featured-main">
+                        <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Minimalist living room with concrete walls and warm oak flooring, large window light">
+                        <div class="cat">Architecture · Featured</div>
+                        <h2><a href="#">The Quiet Power of Concrete in Residential Architecture</a></h2>
+                        <p class="excerpt">How raw concrete, once a brutalist signature, became a canvas for warmth, light, and domestic calm in contemporary homes.</p>
+                        <div class="card-meta"><span class="read">12 min read</span> · <span class="author">Elena Marchetti</span></div>
+                    </div>
+                    <div class="featured-side">
+                        <div class="side-feature">
+                            <img src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Modern kitchen with marble island and pendant lighting">
+                            <div>
+                                <div class="meta">Interior Design</div>
+                                <h4><a href="#">Kitchen Islands: The New Social Heart of the Home</a></h4>
+                                <div class="read-time">8 min read</div>
+                            </div>
+                        </div>
+                        <div class="side-feature">
+                            <img src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Bedroom with linen bedding and soft neutral tones">
+                            <div>
+                                <div class="meta">Lighting</div>
+                                <h4><a href="#">Layered Lighting for Restful Bedrooms</a></h4>
+                                <div class="read-time">6 min read</div>
+                            </div>
+                        </div>
+                        <div class="side-feature">
+                            <img src="https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Small apartment with clever storage and natural light">
+                            <div>
+                                <div class="meta">Small Spaces</div>
+                                <h4><a href="#">Small Space, Big Ideas: 42 sqm Apartment in Lisbon</a></h4>
+                                <div class="read-time">9 min read</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ARTICLE LIST -->
+                <div class="article-list" id="articleList">
+                    <!-- Card 1 -->
+                    <article class="article-card" data-cat="interior" data-title="the art of imperfection wabi sabi interiors">
+                        <img src="https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Wabi-sabi inspired interior with textured clay walls and handmade ceramics">
+                        <div>
+                            <div class="card-meta"><span class="cat">Interior Design</span><span class="read">7 min read</span></div>
+                            <h3><a href="#">The Art of Imperfection: Wabi-Sabi in Contemporary Interiors</a></h3>
+                            <p class="excerpt">Embracing the beauty of the worn, the irregular, and the transient — how wabi-sabi principles can create spaces that feel genuinely lived-in.</p>
+                            <div class="author">By Clara Nakamura</div>
+                        </div>
+                    </article>
+                    <!-- Card 2 -->
+                    <article class="article-card" data-cat="architecture" data-title="passive design tropical modernism">
+                        <img src="https://images.pexels.com/photos/2091166/pexels-photo-2091166.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Tropical modernist house with deep overhangs and cross ventilation">
+                        <div>
+                            <div class="card-meta"><span class="cat">Architecture</span><span class="read">11 min read</span></div>
+                            <h3><a href="#">Passive Design Lessons from Tropical Modernism</a></h3>
+                            <p class="excerpt">Before air conditioning, architects designed with climate. We revisit timeless strategies for cooling, shading, and natural ventilation.</p>
+                            <div class="author">By Marcus Oyelaran</div>
+                        </div>
+                    </article>
+                    <!-- Card 3 -->
+                    <article class="article-card" data-cat="materials" data-title="terrazzo revival sustainable">
+                        <img src="https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Terrazzo floor detail with recycled marble chips">
+                        <div>
+                            <div class="card-meta"><span class="cat">Materials</span><span class="read">6 min read</span></div>
+                            <h3><a href="#">Terrazzo Revival: From Venetian Floors to Sustainable Surfaces</a></h3>
+                            <p class="excerpt">The speckled composite is back — now with recycled glass and low-carbon binders. We explore its history and modern applications.</p>
+                            <div class="author">By Sofia Lindqvist</div>
+                        </div>
+                    </article>
+                    <!-- Card 4 -->
+                    <article class="article-card" data-cat="lighting" data-title="lighting temperature circadian">
+                        <img src="https://images.pexels.com/photos/112811/pexels-photo-112811.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Warm evening lighting in a living room with floor lamp and candles">
+                        <div>
+                            <div class="card-meta"><span class="cat">Lighting</span><span class="read">9 min read</span></div>
+                            <h3><a href="#">Circadian Lighting: Designing with Our Biological Clock</a></h3>
+                            <p class="excerpt">How colour temperature and intensity throughout the day can improve sleep, mood, and productivity — a practical guide.</p>
+                            <div class="author">By Dr. Lena Voss</div>
+                        </div>
+                    </article>
+                    <!-- Card 5 -->
+                    <article class="article-card" data-cat="small-spaces" data-title="micro apartment storage">
+                        <img src="https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Micro apartment with fold-away furniture and mirrored walls">
+                        <div>
+                            <div class="card-meta"><span class="cat">Small Spaces</span><span class="read">8 min read</span></div>
+                            <h3><a href="#">The 30 sqm Challenge: Storage That Disappears</a></h3>
+                            <p class="excerpt">Lessons from Tokyo and Hong Kong on living large in tiny footprints — vertical storage, dual-purpose furniture, and visual tricks.</p>
+                            <div class="author">By Yuki Tanaka</div>
+                        </div>
+                    </article>
+                    <!-- Card 6 -->
+                    <article class="article-card" data-cat="sustainable" data-title="hempcrete carbon negative">
+                        <img src="https://images.pexels.com/photos/2091166/pexels-photo-2091166.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Hempcrete wall construction showing natural texture">
+                        <div>
+                            <div class="card-meta"><span class="cat">Sustainable</span><span class="read">10 min read</span></div>
+                            <h3><a href="#">Hempcrete: The Carbon-Negative Building Material</a></h3>
+                            <p class="excerpt">Strong, breathable, and carbon-sequestering — why hemp-lime composites are gaining ground in eco-conscious architecture.</p>
+                            <div class="author">By Elena Marchetti</div>
+                        </div>
+                    </article>
+                </div>
+                <div id="noResults" class="no-results hidden">No articles match your search. Try another term.</div>
+
+                <!-- ========== LONG-FORM ARTICLE (in-page, for SEO & demo) ========== -->
+                <hr class="divider">
+                <article class="article-detail" id="longArticle">
+                    <div class="article-header">
+                        <div class="small-caps">Design Principles · 18 min read</div>
+                        <h1 style="font-size: 2.4rem;">The Architecture of Light: How Daylight Shapes Interior Space</h1>
+                        <div class="author" style="margin-top: 0.5rem;">By Elena Marchetti · Photography by Jonas W.  </div>
+                        <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Sunlight streaming through large windows onto a wooden floor, casting shadows across a living area">
+                    </div>
+                    <div class="body-content">
+                        <p>Daylight is the most underrated material in architecture. It costs nothing, yet it shapes how we experience volume, texture, and colour. A room bathed in north light feels contemplative; one hit by direct southern sun feels energising. The orientation, size, and treatment of openings are not technical afterthoughts — they are compositional tools.</p>
+                        <p>In this guide, we explore how to design with daylight, from the first sketch to the final window treatment.</p>
+                        <h3>Understanding Light Direction</h3>
+                        <p>North-facing light is consistent, cool, and diffused — ideal for studios and spaces where colour accuracy matters. South-facing light is intense and warm, providing passive solar gain in winter but requiring shading in summer. East brings crisp morning light, while west delivers dramatic, warm evenings that can overheat if unmanaged.</p>
+                        <blockquote>“Light is not just illumination; it is a building material that reveals form and creates atmosphere.” — Louis Kahn</blockquote>
+                        <h3>Strategies for Deeper Daylight</h3>
+                        <p>Light shelves, clerestory windows, and light wells can push daylight deep into floor plans. Reflective surfaces — pale floors, matte white ceilings — bounce light further. In small homes, a single well-placed mirror can double the perceived brightness.</p>
+                        <ul>
+                            <li><strong>Light shelves:</strong> horizontal fins that bounce light onto the ceiling and deep into the room.</li>
+                            <li><strong>Clerestory windows:</strong> high openings that admit light while maintaining privacy.</li>
+                            <li><strong>Skylights:</strong> vertical light that changes throughout the day, adding drama and connection to the sky.</li>
+                        </ul>
+                        <p>When planning a renovation, track the sun path for your latitude. Even small adjustments — widening a window by 20 cm, or shifting a partition — can transform a dim interior into a luminous one.</p>
+                        <h3>Balancing Artificial and Natural</h3>
+                        <p>At night, artificial light should mimic the qualities of daylight: layered, with warmer tones in living areas and cooler, brighter light in task zones. Dimmers are non-negotiable. The goal is not to replicate noon at midnight, but to create a gentle transition that respects our circadian rhythms.</p>
+                        <p>For a deeper dive into lighting design, see our article on <a href="#">Circadian Lighting</a> and <a href="#">Layered Lighting for Bedrooms</a>.</p>
+                    </div>
+                </article>
+
+                <!-- ========== FAQ SECTION ========== -->
+                <section class="faq-section">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="faq-item">
+                        <div class="faq-question">What is the best way to start an interior design project? <span>+</span></div>
+                        <div class="faq-answer"><p>Begin with a clear brief: how you want to feel in the space, your functional needs, and a realistic budget. Gather visual references, then define a cohesive palette and layout before purchasing anything.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">How can I make a small room feel larger? <span>+</span></div>
+                        <div class="faq-answer"><p>Maximise natural light, use mirrors strategically, choose furniture with legs (to show floor), and opt for a consistent colour palette. Vertical storage and multi-functional pieces are key.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Are sustainable materials more expensive? <span>+</span></div>
+                        <div class="faq-answer"><p>Not always. Materials like reclaimed wood, hempcrete, and recycled terrazzo can be cost-competitive, especially when considering lifecycle costs. Locally sourced materials also reduce transport emissions and cost.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">What are common interior design mistakes? <span>+</span></div>
+                        <div class="faq-answer"><p>Ignoring scale, insufficient lighting layers, and pushing furniture against walls. Also: buying matching sets instead of curating over time. Good design breathes.</p></div>
+                    </div>
+                </section>
+
+                <!-- ========== NEWSLETTER ========== -->
+                <div class="newsletter-section">
+                    <div class="newsletter-inner">
+                        <h2>Brevora Letter</h2>
+                        <p>Weekly stories on architecture, interiors, and material culture. No noise, just thoughtful reading.</p>
+                        <form class="newsletter-form" id="newsletterForm">
+                            <input type="email" placeholder="Your email address" required aria-label="Email address">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                        <p style="font-size:0.75rem; margin-top:1rem; color:var(--muted);">We never share your data. Unsubscribe anytime.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SIDEBAR -->
+            <aside class="sidebar">
+                <div class="sidebar-widget">
+                    <h3>Editor’s Picks</h3>
+                    <ul>
+                        <li><a href="#">The Rise of the Multipurpose Room</a><span class="widget-meta">Interior Design · 9 min</span></li>
+                        <li><a href="#">Concrete That Breathes: New Composites</a><span class="widget-meta">Materials · 7 min</span></li>
+                        <li><a href="#">Small Space, Big Ideas: 42 sqm in Lisbon</a><span class="widget-meta">Small Spaces · 9 min</span></li>
+                        <li><a href="#">Circadian Lighting: A Practical Guide</a><span class="widget-meta">Lighting · 12 min</span></li>
+                    </ul>
+                </div>
+                <div class="sidebar-widget">
+                    <h3>Latest Articles</h3>
+                    <ul>
+                        <li><a href="#">Hempcrete: Carbon-Negative Building</a><span class="widget-meta">Sustainable · 10 min</span></li>
+                        <li><a href="#">Terrazzo Revival</a><span class="widget-meta">Materials · 6 min</span></li>
+                        <li><a href="#">Passive Design in Tropical Climates</a><span class="widget-meta">Architecture · 11 min</span></li>
+                        <li><a href="#">Wabi-Sabi Interiors</a><span class="widget-meta">Interior Design · 7 min</span></li>
+                    </ul>
+                </div>
+                <div class="editor-box">
+                    <img src="https://images.pexels.com/photos/3765114/pexels-photo-3765114.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Portrait of editor Elena Marchetti">
+                    <div>
+                        <div class="small-caps">Editor-in-Chief</div>
+                        <p style="font-weight:500; margin-bottom:0.2rem;">Elena Marchetti</p>
+                        <p style="font-size:0.8rem;">Architect and writer. Exploring the intersection of material, light, and human experience.</p>
+                    </div>
+                </div>
+                <div class="sidebar-widget">
+                    <h3>Topics</h3>
+                    <ul style="display:flex; flex-wrap:wrap; gap:0.4rem;">
+                        <li><a href="#" style="background:white; padding:0.3rem 0.8rem; border-radius:20px; font-size:0.8rem; border:1px solid var(--border-light);">Interior Design</a></li>
+                        <li><a href="#" style="background:white; padding:0.3rem 0.8rem; border-radius:20px; font-size:0.8rem; border:1px solid var(--border-light);">Architecture</a></li>
+                        <li><a href="#" style="background:white; padding:0.3rem 0.8rem; border-radius:20px; font-size:0.8rem; border:1px solid var(--border-light);">Materials</a></li>
+                        <li><a href="#" style="background:white; padding:0.3rem 0.8rem; border-radius:20px; font-size:0.8rem; border:1px solid var(--border-light);">Lighting</a></li>
+                        <li><a href="#" style="background:white; padding:0.3rem 0.8rem; border-radius:20px; font-size:0.8rem; border:1px solid var(--border-light);">Small Spaces</a></li>
+                        <li><a href="#" style="background:white; padding:0.3rem 0.8rem; border-radius:20px; font-size:0.8rem; border:1px solid var(--border-light);">Sustainable</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>Brevora</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Sections</h4>
+                    <ul>
+                        <li><a href="#">Interior Design</a></li>
+                        <li><a href="#">Architecture</a></li>
+                        <li><a href="#">Materials</a></li>
+                        <li><a href="#">Lighting</a></li>
+                        <li><a href="#">Space Planning</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>More</h4>
+                    <ul>
+                        <li><a href="#">Home Design</a></li>
+                        <li><a href="#">Furniture</a></li>
+                        <li><a href="#">Modern Homes</a></li>
+                        <li><a href="#">Renovation</a></li>
+                        <li><a href="#">Design Mistakes</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Pinterest</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">RSS</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>© 2025 Brevora Living Lines. Independent editorial.</div>
+                <div>Made with care for design readers.</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== JAVASCRIPT ========== -->
+    <script>
+        (function() {
+            // ----- SEARCH & FILTER -----
+            const searchInput = document.getElementById('searchInput');
+            const categoryPills = document.getElementById('categoryPills');
+            const articles = document.querySelectorAll('.article-card');
+            const noResults = document.getElementById('noResults');
+
+            let activeCategory = 'all';
+            let searchTerm = '';
+
+            function filterArticles() {
+                let visibleCount = 0;
+                const term = searchTerm.toLowerCase().trim();
+
+                articles.forEach(article => {
+                    const cat = article.getAttribute('data-cat') || '';
+                    const title = article.querySelector('h3')?.innerText.toLowerCase() || '';
+                    const excerpt = article.querySelector('.excerpt')?.innerText.toLowerCase() || '';
+                    const author = article.querySelector('.author')?.innerText.toLowerCase() || '';
+                    const fullText = (title + ' ' + excerpt + ' ' + author).toLowerCase();
+
+                    const matchesCategory = (activeCategory === 'all' || cat === activeCategory);
+                    const matchesSearch = (term === '' || fullText.includes(term));
+
+                    if (matchesCategory && matchesSearch) {
+                        article.classList.remove('hidden');
+                        visibleCount++;
+                    } else {
+                        article.classList.add('hidden');
+                    }
+                });
+
+                if (visibleCount === 0) {
+                    noResults.classList.remove('hidden');
+                } else {
+                    noResults.classList.add('hidden');
+                }
+            }
+
+            // Search input
+            if (searchInput) {
+                searchInput.addEventListener('input', function(e) {
+                    searchTerm = e.target.value;
+                    filterArticles();
+                });
+            }
+
+            // Category pills
+            if (categoryPills) {
+                categoryPills.addEventListener('click', function(e) {
+                    const pill = e.target.closest('.cat-pill');
+                    if (!pill) return;
+
+                    document.querySelectorAll('.cat-pill').forEach(p => p.classList.remove('active'));
+                    pill.classList.add('active');
+
+                    activeCategory = pill.getAttribute('data-cat');
+                    filterArticles();
+                });
+            }
+
+            // ----- FAQ ACCORDION -----
+            document.querySelectorAll('.faq-item').forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        item.classList.toggle('open');
+                    });
+                }
+            });
+
+            // ----- NEWSLETTER FORM (demo) -----
+            const newsletterForm = document.getElementById('newsletterForm');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const input = this.querySelector('input[type="email"]');
+                    if (input && input.value) {
+                        alert('Thank you for subscribing to Brevora Letter. (Demo only)');
+                        input.value = '';
+                    }
+                });
+            }
+
+            // ----- SMOOTH SCROLL FOR INTERNAL LINKS (optional) -----
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    const targetEl = document.querySelector(targetId);
+                    if (targetEl) {
+                        e.preventDefault();
+                        targetEl.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+        })();
+    </script>
+</body>
+</html>
